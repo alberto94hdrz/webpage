@@ -12,17 +12,123 @@
   
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
     crossorigin="anonymous">
     <link href="CSS/Style.css" rel="stylesheet" />
     <link href="CSS/mobile-style.css" rel="stylesheet" />
 
-</head>
+    <script type="text/Javascript">
+   $('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+    </script>
+
+
+<style>
+  /* body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+  } */
+  
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    position: relative;
+    opacity: 0.80;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+
+  }
+  
+  .bgimg-1 {
+    background-image: url("assets/computers.png");
+    min-height: 100%;
+  }
+  
+  .bgimg-2 {
+    background-image: url("assets/pexels-photo-636243.jpeg");
+    min-height: 400px;
+  }
+  
+  .bgimg-3 {
+    background-image: url("assets/pexels-photo-452738.jpeg");
+    min-height: 400px;
+  }
+  
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+  
+  .caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+  }
+  
+  h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+  }
+  
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: scroll;
+    }
+  }
+  </style>
+
+
+  </head>
   <body>
       
-    <header>
-        <div class="container-fluid p-0">
-          <nav class="navbar navbar-expand-lg">
+    <header class="bgimg-1">
+        <div class="container-fluid p-0 fixed-top">
+          <nav class="navbar navbar-expand-lg bg-faded">
             <a class="navbar-brand" href="#">
               <i class="fab fa-angrycreative fa-2x mx-3">
     
@@ -42,11 +148,11 @@
                   </a>
                 </li>
     
-    <!-- <%--            <li class="nav-item">
+                <!-- <%--            <li class="nav-item">
                   <a class="nav-link" href="#">UBICACION</a>
                 </li>--%> -->
                 <li class="nav-item">
-                  <a class="nav-link" href="#section5">MIS TRABAJOS</a>
+                  <a id="transition" class="nav-link" href="#section5">MIS TRABAJOS</a>
                 </li>
                 <!-- <%--<li class="nav-item dropdown">
                   <div class="dropdown">
@@ -70,25 +176,37 @@
     
     
     
-        <div class="container text-center" id="section1">
+        <div class="container text-center " id="section1">
           <div class="row">
             <div class="col-md-7 col-sm-12  text-white contenedor-header" >
-              <h6>AUTHOR: ALBERTO HERNANDEZ</h6>
+              <h6>ALBERTO HERNANDEZ</h6>
               <h1>Programación de ideas</h1>
               <p>
                 Si lo puedes imaginar, lo puedes programar - Alejandro Taboada.
               </p>
-              <button class="btn btn-light px-5 py-2 primary-btn" >
-                <a href="#section5" style="color:black">MIS TRABAJOS</a>
-              </button>
+              <form method="get" action="#section5">
+                <button type="submit" class="btn btn-light px-5 py-2 primary-btn">Mis Trabajos</button>
+              </form>
             </div>
             <div class="col-md-5 col-sm-12  h-25 align-self-center">
-              <img src="assets/header-img1.png" alt="Book" class="logo"/>
+              <img src="assets/logopng.png" alt="Book" class="logo"/>
             </div>
           </div>
         </div>
       </header>
     
+      <!-- <div class="bgimg-1">
+        <div class="caption">
+        <span class="border">SCROLL DOWN</span>
+        </div>
+      </div> -->
+
+      <div class="bgimg-1">
+        <!-- <div class="caption">
+        <span class="border">SCROLL DOWN</span>
+        </div> -->
+      </div>
+
 
       <main>
         <section class="section-1" id="section2">
@@ -117,6 +235,7 @@
             </div>
           </div>
         </section>
+
         <section class="section-2 container-fluid p-0" id="section3">
           <div class="cover">
             <div class="overlay"></div>
@@ -127,7 +246,7 @@
               </p>--%> -->
             </div>
           </div>
-          <div class="container-fluid text-center">
+          <div class="container-fluid text-center ">
             <div class="numbers d-flex flex-md-row flex-wrap justify-content-center">
               <div class="rect">
                 <h1>6</h1>
@@ -147,7 +266,6 @@
               </div>
             </div>
           </div>
-    
     
           <div class="purchase text-center" id="section5">
             <h1>Lenguajes de programación</h1>
@@ -452,7 +570,46 @@
         </section>
       </main>
     
-
+      <footer>
+        <div class="container-fluid p-0" id="section7">
+          <div class="row text-left">
+            <div class="col-md-5 col-sm-5">
+              <h4 class="text-light">Contactame</h4>
+              <p class="text-muted">Movil: +52(656) 273-9439</p>
+              <p class="text-muted">Correo: alberto94hdrz@hotmail.com</p>
+              <p class="pt-4 text-muted">Copyright ©2019 All rights reserved
+                <!-- <%--<span> Daily Tuition</span>--%> -->
+              </p>
+            </div>
+            <div class="col-md-5 col-sm-12">
+              <h4 class="text-light">Novedades</h4>
+              <p class="text-muted">Mandame un correo</p>
+              <form class="form-inline">
+                <div class="col pl-0">
+                  <div class="input-group pr-5">
+                    <input type="text" class="form-control bg-dark text-white" id="inlineFormInputGroupUsername2" placeholder="Email"/>
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <i class="fas fa-arrow-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- <%--<div class="col-md-2 col-sm-10" >
+              <h4 class="text-light">Sigueme</h4>
+              <p class="text-muted">Let us be social</p>
+              <div class="column text-light" >
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-youtube"></i>
+              </div>
+            </div>--%> -->
+          </div>
+        </div>
+      </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

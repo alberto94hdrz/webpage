@@ -3,6 +3,45 @@
   box-sizing: border-box;
 }
 
+
+
+
+
+.background-image {
+  background-image: url('../assets/computers.png'); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+}
+
+/* *******************************PARALAX****************************************** */
+
+
+
+#instructions {
+	position: absolute;
+	color: #fff;
+	bottom: 0;
+	padding-bottom: 6px;
+	font-family: sans-serif;
+	width: 100%;
+	text-align: center;
+	pointer-events: none;
+}
+
+/* .module {
+  scroll-behavior: [ auto | smooth ];
+} */
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
 header,
 section {
   overflow-x: hidden;
@@ -197,7 +236,7 @@ header .container .col-md-7 p {
   padding-top: 3.5vmin;
   margin: 1rem;
   border-radius: 0.5em;
-  box-shadow: 1px 2px 50px 0px rgba(255, 0, 0, 0.349);
+  box-shadow: 1px 2px 50px 0px rgba(10, 148, 212, 0.349);
 }
 
 .numbers {
