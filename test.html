@@ -15,44 +15,79 @@
    ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="js/custom.js"></script>
+  <style>
+    .content {
+  height: 3000px;
+}
 
-<link rel="stylesheet" href="css/clients.css">     
+#sample {
+  background: #ff0000;
+  position: fixed;
+  bottom: 0;
+  height: auto;
+  max-height: 100px;
+  width: 100%;
+  z-index: 999;
+  display: none;
+}
+
+#container
+{
+    height:2000px;    
+}
+
+#container DIV
+{ 
+    margin:50px; 
+    padding:50px; 
+    background-color:lightgreen; 
+}
+
+.hideme
+{
+    opacity:0;
+}
+
+  </style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js" type="text/javascript"></script> 
+
+<script src="js/custom.js" ></script>
+
 
 
 </head>
 
 <body >
-    <div id="clients">
-        <div class="clients-wrap">
-          <ul id="clients-list" class="clearfix">
-            <li>
-              <img src="images/logos/logo_tnch.png" alt="TNCH">
-            </li>
-            <li>
-              <img src="images/logos/logo_distmart.png" alt="Distmart">
-            </li>
-            <li>
-              <img src="images/logos/logo_morena.png" alt="La Morena">
-            </li>
-            <li>
-              <img src="images/logos/logo_uacj.png" alt="UACJ">
-            </li>
-            <li>
-              <img src="images/logos/logo_leos.png" alt="Dakota Molding">
-            </li>
-            <li>
-              <img src="images/logos/logo_tortas.png" alt="Dakota Peat">
-            </li>
-            <li>
-              <img src="images/logos/logo_burros.jpeg" alt="First State Bank">
-            </li>
-   
-          </ul>
-        </div>
-      </div>
-      
+
+
+  <div class="content">
+    Content
+  </div>
+  <div id="sample">
+    sample
+  </div>
+
+
+  <div id="container">
+    
+    <div>Hello</div>
+    <div>Hello</div>
+    <div>Hello</div>
+    <div>Hello</div>
+    <div>Hello</div>
+    <div>Hello</div>
+    <div class="hideme">Fade In</div>
+    <div class="hideme">Fade In</div>
+    <div class="hideme">Fade In</div>
+    <div class="hideme">Fade In</div>
+    <div class="hideme">Fade In</div>
+    
+</div>
+
 </body>
 
 </html>

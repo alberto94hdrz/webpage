@@ -26,6 +26,7 @@
    <link rel="stylesheet" href="css/clients.css">     
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <script src="https://kit.fontawesome.com/360e0f40b5.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
    <!-- script
    ================================================== -->   
@@ -105,7 +106,7 @@
 					<ul class="main-navigation">
 						<li class="current"><a class="smoothscroll"  href="#intro" title="">Inicio</a></li>
 						<li><a class="smoothscroll"  href="#about" title="">Acerca</a></li>
-						<li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
+						<li><a class="smoothscroll"  href="#resume" title="">Resumen</a></li>
 						<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
 						<li><a class="smoothscroll"  href="#services" title="">Servicios</a></li>					
 						<li><a class="smoothscroll"  href="#contact" title="">Contacto</a></li>	
@@ -125,9 +126,8 @@
    		<div class="row">
 
    			<div class="col-twelve">
-
-	   			<h5 id="lbltipAddedComment">Hola, mundo.</h5>
-	   			<h1>Alberto Hernández</h1>
+				<h5 id="lbltipAddedComment">Hola, mundo.</h5>
+	   			<h1 class="animate__fadeInUp">Alberto Hernández</h1>
 				   <label id="lbltipAddedComment">test</label>
 	   			<p class="intro-position">
 	   				<span>Si lo puedes imaginar, lo puedes programar - Alejandro Taboada.</span>
@@ -155,12 +155,12 @@
    <!-- about section ================================================== -->
    <section id="about">  
 
-   	<div class="row section-intro">
+   	<div class="row section-intro hideme">
    		<div class="col-twelve">
    			<h5>Acerca de mí</h5>
-   			<h1>Let me introduce myself.</h1>
+   			<h1>¡Conóceme!</h1>
 
-   			<div class="intro-info">
+   			<div class="intro-info ">
 
    				<img src="images/foto_perfil.jpg" alt="Foto Perfil">
 
@@ -272,7 +272,7 @@
    ================================================== -->
 	<section id="resume" class="grey-section">
 
-		<div class="row section-intro">
+		<div class="row section-intro hideme">
    		<div class="col-twelve">
 
    			<h5>Resumen laboral</h5>
@@ -293,7 +293,7 @@
 
    			<div class="timeline-wrap">
 
-   				<div class="timeline-block">
+   				<div class="timeline-block hideme">
 
 	   				<div class="timeline-ico">
 						<i class="material-icons">work</i>
@@ -318,7 +318,7 @@
 
 	   			</div> <!-- /timeline-block -->
 
-	   			<div class="timeline-block">
+	   			<div class="timeline-block hideme">
 
 	   				<div class="timeline-ico">
 						<i class="material-icons">work</i>
@@ -339,7 +339,7 @@
 
 	   			</div> <!-- /timeline-block -->
 
-	   			<div class="timeline-block">
+	   			<div class="timeline-block hideme">
 
 	   				<div class="timeline-ico">
 						<i class="material-icons">work</i>
@@ -358,7 +358,7 @@
 
 	   			</div> <!-- /timeline-block -->
 
-	   			<div class="timeline-block">
+	   			<div class="timeline-block hideme">
 
 					<div class="timeline-ico">
 						<i class="material-icons">work</i>
@@ -386,7 +386,7 @@
    	
    	<div class="row resume-timeline">
 
-   		<div class="col-twelve resume-header">
+   		<div class="col-twelve resume-header hideme">
 
    			<h2>Educación</h2>
 
@@ -396,7 +396,7 @@
 
    			<div class="timeline-wrap">
 
-   				<div class="timeline-block">
+   				<div class="timeline-block hideme">
 
 	   				<div class="timeline-ico">
 						<i class="fa fa-graduation-cap"></i>
@@ -414,7 +414,7 @@
 
 	   			</div> <!-- /timeline-block -->
 
-	   			<div class="timeline-block">
+	   			<div class="timeline-block hideme">
 
 	   				<div class="timeline-ico">
 						<i class="fa fa-graduation-cap"></i>
@@ -432,7 +432,7 @@
 
 	   			</div> <!-- /timeline-block -->
 
-	   			<div class="timeline-block">
+	   			<div class="timeline-block hideme">
 
 	   				<div class="timeline-ico">
 						<i class="fa fa-graduation-cap"></i>
@@ -449,7 +449,6 @@
 	   				</div>
 
 	   			</div> <!-- /timeline-block -->
-
    			</div> <!-- /timeline-wrap -->   			
 
    		</div> <!-- /col-twelve -->
@@ -690,14 +689,17 @@
 	            <div id="modal-01" class="popup-modal slider mfp-hide">	
 
 				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-liberty.jpg" alt="" />
+				     		<img src="images/portfolio/trabajo_punto.PNG" alt="" />
 				     	</div>      	
 
 					   <div class="description-box">
-					      <h4>Liberty</h4>		      
-					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+					      <h4>Aca Las Tortas</h4>		      
+					      <p>Se desarrollo un punto de venta para sus 3 sucursales, el cual les permite realizar consultas de sus ventas, 
+							  llevar un registro de ventas, impresión de tickets, creación de usuarios y control de inventario, además 
+							  de que se le incluyo un apartado programado exclusivamente para el cliente el cual lleva el control de sus 
+							  entregas a domicilio (Cantidad, venta, tiempos de entrega, comanda de pedidos, etc.).</p>
 
-					      <div class="categories">Web Development</div>			               
+					      <div class="categories">Aplicación Windows</div>			               
 					   </div>
 
 			         <div class="link-box">
@@ -710,14 +712,16 @@
 				   <div id="modal-02" class="popup-modal slider mfp-hide">	
 
 				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-shutterbug.jpg" alt="" />
+				     		<img src="images/portfolio/trabajo_tnch.PNG" alt="" />
 				     	</div>      	
 
 					   <div class="description-box">
-					      <h4>Shutterbug</h4>		      
-					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+					      <h4>Transportadora Norte De Chihuahua</h4>		      
+					      <p>Sistema web para la empresa, el cual cuenta con el control de empleados, control de movimientos de los choferes, 
+							  control de departamentos como contabilidad, recursos humanos, taller, etc. Además de catalogo e 
+							  inventario de inventario de equipo (computadoras, móviles, tablets).</p>
 
-					      <div class="categories">Web Design</div>			               
+					      <div class="categories">Sistemas Web</div>			               
 					   </div>
 
 			         <div class="link-box">
@@ -862,138 +866,81 @@
 	<section id="services">
 
 		<div class="overlay"></div>
+			<div class="row section-intro">
+				<div class="col-twelve">
+					<h5>Servicios</h5>
+					<h1>¿En qué te puedo ayudar?</h1>
+					<p class="lead">Desde la creación de una página web o una aplicación, arreglar algún equipo o hasta diseñar un sistema complejo, me adapto a tus necesidades.</p>
+				</div>   		
+			</div> 
 
-		<div class="row section-intro">
-   		<div class="col-twelve">
-
-   			<h5>Servicios</h5>
-   			<h1>¿En qué te puedo ayudar?</h1>
-
-   			<p class="lead">Desde la creación de una página web, arreglar algún equipo o diseñar un sistema complejo, me adapto a tus necesidades.</p>
-
-   		</div>   		
-   	</div> <!-- /section-intro -->
-
-   	<div class="row services-content">
-
-   		<div id="owl-slider" class="owl-carousel services-list">
-
-	      	<div class="service">	
-
-	      		<span class="icon"><i class="icon-earth"></i></span>            
-
-	            <div class="service-content">	
-
-	            	 <h3>Diseño Web</h3>
-
-		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-	         		</p>
-	         		
-	         	</div> 	         	 
-
-				</div> <!-- /service -->
+		<div class="row services-content">
+			<div id="owl-slider" class="owl-carousel services-list">
+				<div class="service">	
+					<span class="icon"><i class="icon-earth"></i></span>            
+					<div class="service-content">	
+						<h3>Diseño Web</h3>
+						<p class="desc">Creación de sitio web con solo funcionabilidad visual para presentar información hasta un sistema web con funcionalidades específicas para un cliente, además de soporte para el host y adquisición del dominio de acuerdo a las necesidades.
+						</p>						
+					</div> 	         	 
+				</div> 
 
 				<div class="service">	
-
 					<span class="icon"><i class="icon-mobile"></i> </span>                          
-
-	            <div class="service-content">	
-
-	            	<h3>Aplicación Android</h3>  
-
-		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-	         		</p>
-
-	            </div>	                          
-
-			   </div> <!-- /service -->
-
-			   <div class="service">
-
-			   	<span class="icon"><i class="fa fa-windows"></i></span>		            
-
-	            <div class="service-content">
-
-	            	<h3>Aplicación Windows</h3>
-
-		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-	        			</p> 
-
-	            </div> 	            	               
-
-			   </div> <!-- /service -->
+					<div class="service-content">	
+						<h3>Aplicación Android</h3>  
+						<p class="desc">Desarrollo de aplicación para dispositivos con sistema operativo Android, utilizando los sensores y componentes del smartphone como lo son la bocina, micrófono, sensores de movimientos y cámara para darle una experiencia y funcionalidad distinta a tu aplicación.
+						</p>
+					</div>	                          
+				</div> 
 
 				<div class="service">
+					<span class="icon"><i class="fa fa-windows"></i></span>		            
+					<div class="service-content">
+						<h3>Aplicación Escritorio</h3>
+						<p class="desc">Aplicación desarrollada para equipos de cómputo o tables con sistema operativo de Windows, la cual se programa para recibir actualizaciones a través de internet o conectividad a bases de datos en línea.
+							</p> 
+					</div> 	            	               
+				</div> 
 
+				<div class="service">
 					<span class="icon"><i class="icon-toggles"></i></span>	              
+					<div class="service-content">
+						<h3>UI/UX Design</h3>
+						<p class="desc">Corregir, mejorar o actualizaciones de interfaz gráfica de páginas web.
+						</p> 						
+					</div>                
+				</div> 
 
-	            <div class="service-content">
+				<div class="service">
+					<span class="icon"><i class="fa fa-database"></i></span>	            
+					<div class="service-content">
+						<h3>Hosting</h3>
+						<p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+							</p> 
+					</div>	               
 
-	            	<h3>UI/UX Design</h3>
+				</div> 
+				<div class="service">
+					<span class="icon"><i class="icon-chat"></i></span>	   	           
+					<div class="service-content">
+						<h3>Consultas</h3>
+						<p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+							</p> 							
+					</div>	               
+				</div> 
 
-		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-	         		</p> 
-	         		
-	            </div>                
-
-				</div> <!-- /service -->
-
-			   <div class="service">
-
-			   	<span class="icon"><i class="fa fa-database"></i></span>	            
-
-	            <div class="service-content">
-
-	            	<h3>Hosting</h3>
-
-		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-	        			</p> 
-
-	            </div>	               
-
-			   </div> <!-- /service -->
-
-			<div class="service">
-
-			   	<span class="icon"><i class="icon-chat"></i></span>	   	           
-
-	            <div class="service-content">
-
-	            	 <h3>Consultas</h3>
-
-		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-	        			</p> 
-	        			
-	            </div>	               
-
-			</div> <!-- /service -->
-
-			<div class="service">
-
-				<span class="icon"><i class="fas fa-tools"></i></i></span>	   	           
-  	           
-				<div class="service-content">
-
-					<h3>Soporte Tecnico</h3>
-
-					<p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-					</p> 
-					
-				</div>	               
-
-			</div> <!-- /service -->
-
-	    </div> <!-- /services-list -->
-   		
-   	</div> <!-- /services-content -->
-		
-	</section> <!-- /services -->	
-
-
-
-
-
-
+				<div class="service">
+					<span class="icon"><i class="fas fa-tools"></i></i></span>	   	           				
+					<div class="service-content">
+						<h3>Soporte Tecnico</h3>
+						<p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+						</p> 						
+					</div>	               
+				</div> 
+			</div> 		
+		</div> 	
+	</section> 	
 	
    <!-- contact
    ================================================== -->
@@ -1009,93 +956,93 @@
 
 			</div> 
    		</div>  -->
-<!-- 
-   	<div class="row contact-form">
-   		<div class="col-twelve">
-            <form name="contactForm" id="contactForm" method="post" action="">
-      			<fieldset>
+		<!-- 
+		<div class="row contact-form">
+			<div class="col-twelve">
+				<form name="contactForm" id="contactForm" method="post" action="">
+					<fieldset>
 
-                  <div class="form-field">
- 						   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
-                  </div>
-                  <div class="form-field">
-	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
-	               </div>
-                  <div class="form-field">
-	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
-	               </div>                       
-                  <div class="form-field">
-	                 	<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
-	               </div>                      
-                 <div class="form-field">
-                     <button class="submitform">Submit</button>
-                     <div id="submit-loader">
-                        <div class="text-loader">Sending...</div>                             
-       				      <div class="s-loader">
-								  	<div class="bounce1"></div>
-								  	<div class="bounce2"></div>
-								  	<div class="bounce3"></div>
+					<div class="form-field">
+							<input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
+					</div>
+					<div class="form-field">
+						<input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
+					</div>
+					<div class="form-field">
+							<input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+					</div>                       
+					<div class="form-field">
+							<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
+					</div>                      
+					<div class="form-field">
+						<button class="submitform">Submit</button>
+						<div id="submit-loader">
+							<div class="text-loader">Sending...</div>                             
+							<div class="s-loader">
+										<div class="bounce1"></div>
+										<div class="bounce2"></div>
+										<div class="bounce3"></div>
+									</div>
 								</div>
-							</div>
-                  </div>
+					</div>
 
-      			</fieldset>
-      		</form> 
-            <div id="message-warning">            	
-            </div>            
-      		<div id="message-success">
-               <i class="fa fa-check"></i>Your message was sent, thank you!<br>
-      		</div>
+					</fieldset>
+				</form> 
+				<div id="message-warning">            	
+				</div>            
+				<div id="message-success">
+				<i class="fa fa-check"></i>Your message was sent, thank you!<br>
+				</div>
 
-         </div> 
-   		
-   	</div>  -->
+			</div> 
+			
+		</div>  -->
 
-   	<div class="row contact-info">
+		<div class="row contact-info">
 
-   		<div class="col-four tab-full">
+			<div class="col-four tab-full">
 
-   			<div class="icon">
-   				<i class="icon-pin"></i>
-   			</div>
+				<div class="icon">
+					<i class="icon-pin"></i>
+				</div>
 
-   			<h5>Donde me encuentro</h5>
+				<h5>Donde me encuentro</h5>
 
-   			<p>
-				Cd. Juárez Chihuahua, Mex
-            </p>
+				<p>
+					Cd. Juárez Chihuahua, Mex
+				</p>
 
-   		</div>
+			</div>
 
-   		<div class="col-four tab-full collapse">
+			<div class="col-four tab-full collapse">
 
-   			<div class="icon">
-   				<i class="icon-mail"></i>
-   			</div>
+				<div class="icon">
+					<i class="icon-mail"></i>
+				</div>
 
-   			<h5>Envíame un correo</h5>
+				<h5>Envíame un correo</h5>
 
-   			<p>alberto94hdrz@hotmail.com<br>
-			   </p>
+				<p>alberto94hdrz@hotmail.com<br>
+				</p>
 
-   		</div>
+			</div>
 
-   		<div class="col-four tab-full">
+			<div class="col-four tab-full">
 
-   			<div class="icon">
-   				<i class="icon-phone"></i>
-   			</div>
+				<div class="icon">
+					<i class="icon-phone"></i>
+				</div>
 
-   			<h5>Llámame</h5>
+				<h5>Llámame</h5>
 
-   			<p>Teléfono: (+52) 656 273-9439<br>
-			   </p>
+				<p>Teléfono: (+52) 656 273-9439<br>
+				</p>
 
-   		</div>
-   		
-   	</div> <!-- /contact-info -->
+			</div>
+			
+		</div> 
 		
-	</section> <!-- /contact -->
+	</section> 
 
 
    <!-- footer
@@ -1113,20 +1060,20 @@
 			      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
 			   </ul> 
 	      		
-	      </div>
+	      	</div>
 
-      	<div class="col-six tab-full">
-	      	<div class="copyright">
-		        	<span>© Copyright Kards 2016.</span> 
-		        	<span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>	         	
+      		<div class="col-six tab-full">
+				<div class="copyright">
+						<span>© Copyright Kards 2016.</span> 
+						<span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>	         	
 		         </div>		                  
 	      	</div>
 
 	      	<div id="go-top">
-		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
-		      </div>
+				<a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+			</div>
 
-      	</div> <!-- /row -->     	
+      	</div>    	
    </footer>  
 
    <div id="preloader"> 
