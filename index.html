@@ -24,7 +24,8 @@
    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
    <link rel="stylesheet" href="css/clients.css">     
-
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="https://kit.fontawesome.com/360e0f40b5.js" crossorigin="anonymous"></script>
 
    <!-- script
    ================================================== -->   
@@ -36,6 +37,12 @@
    <!-- favicons
 	================================================== -->
 	<link rel="icon" type="image/png" href="favicon.png">
+
+
+	<script type="text/javascript">
+
+	 </script>
+
 
 </head>
 
@@ -84,9 +91,15 @@
    		<div class="top-bar" >
    			<a class="menu-toggle" href="#"><span>Menu</span></a>
 
-	   		<div class="logo">
+	   		<!-- <div class="logo">
 		         <a href="index.html">KARDS</a>
-		      </div>		      
+		      </div>		       -->
+
+			  <div>
+				<!-- <button id="buttonSpanish"></button>
+				<button class="btn"><i class="fab fa-500px"></i></button>
+			  </div> -->
+
 
 		   	<nav id="main-nav-wrap">
 					<ul class="main-navigation">
@@ -113,9 +126,9 @@
 
    			<div class="col-twelve">
 
-	   			<h5>Hello, World.</h5>
+	   			<h5 id="lbltipAddedComment">Hola, mundo.</h5>
 	   			<h1>Alberto Hernández</h1>
-
+				   <label id="lbltipAddedComment">test</label>
 	   			<p class="intro-position">
 	   				<span>Si lo puedes imaginar, lo puedes programar - Alejandro Taboada.</span>
 	   				<!-- <span>UI/UX Designer</span>  -->
@@ -149,7 +162,7 @@
 
    			<div class="intro-info">
 
-   				<img src="images/profile-pic.jpg" alt="Profile Picture">
+   				<img src="images/foto_perfil.jpg" alt="Foto Perfil">
 
    				<p class="lead">
 					Con mas de 5 años como desarrollador, además de 3 años programando en el ámbito profesional, 
@@ -176,7 +189,7 @@
    			<ul class="info-list">
    				<li>
    					<strong>Nombre:</strong>
-   					<span>Alberto Hernánde Rodríguez</span>
+   					<span>Alberto Hernández Rodríguez</span>
    				</li>
    				<li>
    					<strong>Fecha Nacimiento:</strong>
@@ -186,10 +199,10 @@
    					<strong>Trabajo Actual:</strong>
    					<span>Ing. Sistemas en Transportadora Norte de Chihuahua</span>
    				</li>
-   				<!-- <li>
-   					<strong>Website:</strong>
-   					<span>www.kardswebsite.com</span>
-   				</li> -->
+   				<li>
+					<strong>Escolaridad:</strong>
+					<span>Ing. Sistemas Computacionales </span>
+				</li>
    				<li>
    					<strong>Email:</strong>
    					<span>alberto94hdrz@hotmail.com</span>
@@ -263,9 +276,7 @@
    		<div class="col-twelve">
 
    			<h5>Resumen laboral</h5>
-   			<h1>More of my credentials.</h1>
-
-   			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+   			<h1>Conoce un poco más de mi experiencia</h1>
 
    		</div>   		
    	</div> <!-- /section-intro--> 
@@ -274,7 +285,7 @@
 
    		<div class="col-twelve resume-header">
 
-   			<h2>Experiencia</h2>
+   			<h2>Trabajo</h2>
 
    		</div> <!-- /resume-header -->
 
@@ -310,7 +321,7 @@
 	   			<div class="timeline-block">
 
 	   				<div class="timeline-ico">
-	   					<i class="fa fa-graduation-cap"></i>
+						<i class="material-icons">work</i>
 	   				</div>
 
 	   				<div class="timeline-header">
@@ -331,7 +342,7 @@
 	   			<div class="timeline-block">
 
 	   				<div class="timeline-ico">
-	   					<i class="fa fa-graduation-cap"></i>
+						<i class="material-icons">work</i>
 	   				</div>
 
 	   				<div class="timeline-header">
@@ -350,7 +361,7 @@
 	   			<div class="timeline-block">
 
 					<div class="timeline-ico">
-						<i class="fa fa-graduation-cap"></i>
+						<i class="material-icons">work</i>
 					</div>
 
 					<div class="timeline-header">
@@ -388,7 +399,7 @@
    				<div class="timeline-block">
 
 	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
+						<i class="fa fa-graduation-cap"></i>
 	   				</div>
 
 	   				<div class="timeline-header">
@@ -406,7 +417,7 @@
 	   			<div class="timeline-block">
 
 	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
+						<i class="fa fa-graduation-cap"></i>
 	   				</div>
 
 	   				<div class="timeline-header">
@@ -424,7 +435,7 @@
 	   			<div class="timeline-block">
 
 	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
+						<i class="fa fa-graduation-cap"></i>
 	   				</div>
 
 	   				<div class="timeline-header">
@@ -476,7 +487,7 @@
 				<div class="bgrid stat">
 
 					<div class="icon-part">
-						<i class="icon-users"></i>
+						<i class="fas fa-users"></i>
 					</div>
 
 					<h3 class="stat-count">
@@ -487,23 +498,7 @@
 						Clientes
 					</h5>
 
-				</div> <!-- /stat -->
-
-				<!-- <div class="bgrid stat">
-
-					<div class="icon-part">
-						<i class="icon-badge"></i>
-					</div>
-
-					<h3 class="stat-count">
-						200
-					</h3>
-
-					<h5 class="stat-title">
-						Awards Received
-					</h5>
-
-				</div> 								 -->
+				</div> 
 
 				<div class="bgrid stat">
 
@@ -516,7 +511,7 @@
 					</h3>
 
 					<h5 class="stat-title">
-						Crazy Ideas
+						Ideas					
 					</h5>
 
 				</div> <!-- /stat -->
@@ -524,7 +519,7 @@
 				<div class="bgrid stat">
 
 					<div class="icon-part">
-						<i class="icon-cup"></i>
+						<i class="fas fa-code"></i>
 					</div>
 
 					<h3 class="stat-count">
@@ -532,7 +527,7 @@
 					</h3>
 
 					<h5 class="stat-title">
-						Coffee Cups
+						Líneas de código
 					</h5>
 
 				</div> <!-- /stat -->
@@ -548,7 +543,7 @@
 					</h3>
 
 					<h5 class="stat-title">
-						Hours
+						Horas programadas				
 					</h5>
 
 				</div> <!-- /stat -->
@@ -575,7 +570,7 @@
    			<h5>Portafolio</h5>
    			<h1>Algunos de mis trabajos</h1>
 
-   			<p class="lead">.
+   			<p class="lead">
 				Me adapto a la plataforma que más te convenga.
 			   </p>
 
@@ -872,9 +867,9 @@
    		<div class="col-twelve">
 
    			<h5>Servicios</h5>
-   			<h1>En que te podemos ayudar?</h1>
+   			<h1>¿En qué te puedo ayudar?</h1>
 
-   			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+   			<p class="lead">Desde la creación de una página web, arreglar algún equipo o diseñar un sistema complejo, me adapto a tus necesidades.</p>
 
    		</div>   		
    	</div> <!-- /section-intro -->
@@ -958,7 +953,7 @@
 
 			   </div> <!-- /service -->
 
-			   <div class="service">
+			<div class="service">
 
 			   	<span class="icon"><i class="icon-chat"></i></span>	   	           
 
@@ -971,25 +966,24 @@
 	        			
 	            </div>	               
 
-			   </div> <!-- /service -->
+			</div> <!-- /service -->
 
-			   <div class="service">
+			<div class="service">
 
-				<span class="icon"><i class="icon-building"></i></span>	   	           
+				<span class="icon"><i class="fas fa-tools"></i></i></span>	   	           
   	           
+				<div class="service-content">
 
-			 			<div class="service-content">
+					<h3>Soporte Tecnico</h3>
 
-				  			<h3>Soporte Tecnico</h3>
+					<p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+					</p> 
+					
+				</div>	               
 
-				 			<p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-					 		</p> 
-					 
-						 </div>	               
+			</div> <!-- /service -->
 
-				</div> <!-- /service -->
-
-	      </div> <!-- /services-list -->
+	    </div> <!-- /services-list -->
    		
    	</div> <!-- /services-content -->
 		
@@ -1065,12 +1059,10 @@
    				<i class="icon-pin"></i>
    			</div>
 
-   			<h5>Where to find me</h5>
+   			<h5>Donde me encuentro</h5>
 
    			<p>
-            1600 Amphitheatre Parkway<br>
-            Mountain View, CA<br>
-            94043 US
+				Cd. Juárez Chihuahua, Mex
             </p>
 
    		</div>
@@ -1081,10 +1073,9 @@
    				<i class="icon-mail"></i>
    			</div>
 
-   			<h5>Email Me At</h5>
+   			<h5>Envíame un correo</h5>
 
-   			<p>someone@kardswebsite.com<br>
-			   	info@kardswebsite.com			     
+   			<p>alberto94hdrz@hotmail.com<br>
 			   </p>
 
    		</div>
@@ -1095,11 +1086,9 @@
    				<i class="icon-phone"></i>
    			</div>
 
-   			<h5>Call Me At</h5>
+   			<h5>Llámame</h5>
 
-   			<p>Phone: (+63) 555 1212<br>
-			   	Mobile: (+63) 555 0100<br>
-			     	Fax: (+63) 555 0101
+   			<p>Teléfono: (+52) 656 273-9439<br>
 			   </p>
 
    		</div>

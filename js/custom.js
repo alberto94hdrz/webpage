@@ -1,3 +1,12 @@
+
+
+		$(function() { // execute on document ready
+			$('#buttonSpanish').click( function() {   document.getElementById('lbltipAddedComment').innerHTML = 'your tip has been submitted!';
+
+			   
+			});
+		});
+
 $(function() {
     // vars for clients list carousel
     // http://stackoverflow.com/questions/6759494/jquery-function-definition-in-a-carousel-script

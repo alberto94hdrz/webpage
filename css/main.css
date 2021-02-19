@@ -42,6 +42,36 @@
 
 
 
+/* ******************************************************* LENGUAGE BUTTONS */
+
+
+
+#buttonSpanish
+{
+	border-radius: 100%;
+	transition-duration: 0.4s;
+}
+
+  
+  #buttonSpanish:hover {
+	background-color: #4CAF50; /* Green */
+	color: white;
+  }
+
+  #buttonSpanish:active
+  {
+	background-color: #b18d16; /* Green */
+	color: white;  
+  }
+
+
+/* ******************************************************* LENGUAGE BUTTONS */
+
+
+
+
+
+
 .section-padding{
 	padding:60px 0;
 	}
@@ -89,16 +119,37 @@ html {
 	html {
 		font-size: 9.411764705882353px;
 	}
+
+
+	#buttonSpanish
+	{
+		width: 50px;
+		height: 50px;
+	}
+
 }
 @media only screen and (max-width:768px) {
 	html {
 		font-size: 10px;
+	}
+
+	#buttonSpanish
+	{
+		width: 20px;
+		height: 20px;
 	}
 }
 @media only screen and (max-width:400px) {
 	html {
 		font-size: 9.411764705882353px;
 	}
+
+	#buttonSpanish
+	{
+		width: 5px;
+		height: 5px;
+	}
+
 }
 
 html, body {
@@ -1547,7 +1598,7 @@ header .logo a {
 	padding-bottom: 15rem;
 }
 #about .section-intro {
-	margin-bottom: 3rem;
+	margin-bottom: 1rem;
 }
 
 .intro-info {
@@ -1556,15 +1607,15 @@ header .logo a {
 	margin-left: -30px;
 }
 .intro-info img {
-	height: 9rem;
-	width: 9rem;
+	height: 18rem;
+	width: 18rem;
 	border-radius: 50%;
-	margin: .9rem 0 0 0;
+	/* margin: .9rem 0 0 0; */
 	float: left;
 }
 .intro-info .lead {
-	text-align: left;
-	padding-left: 13rem;
+	text-align:justify;
+	padding-left: 25rem;
 }
 
 .about-content {
