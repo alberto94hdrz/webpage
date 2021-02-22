@@ -2219,7 +2219,7 @@ header .logo a {
 	-moz-background-size: cover;
 	background-size: cover;
 	padding-top: 12rem;
-	padding-bottom: 12rem;
+	/* padding-bottom: 8rem; */
 	color: white;
 	position: relative;
 }
@@ -2302,9 +2302,9 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #stats {
-	background: #990047;
+	background: #a16421;
 	padding-top: 7.2rem;
-	padding-bottom: 6rem;
+	padding-bottom: 4rem;
 	text-align: center;
 }
 #stats .row {
@@ -2320,7 +2320,7 @@ header .logo a {
 }
 #stats .icon-part i {
 	font-size: 4.8rem;
-	color: #000000;
+	color: #ffffff;
 }
 #stats .stat-count {
 	color: #FFFFFF;
@@ -2371,7 +2371,7 @@ header .logo a {
  */
 #contact {
 	background: #151515;
-	padding-top: 12rem;
+	padding-top: 8rem;
 	padding-bottom: 7.2rem;
 }
 #contact .section-intro h1 {
