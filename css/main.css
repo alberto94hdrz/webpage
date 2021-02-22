@@ -2540,10 +2540,18 @@ header .logo a {
 .contact-info .icon {
 	margin-bottom: 2.1rem;
 }
+
 .contact-info .icon i {
 	font-size: 4.2rem;
-	color: #FFFFFF;
+	color: #ffffff;
 }
+
+.contact-info .icon i :hover {
+	font-size: 4.2rem;
+	color: #c21313;
+}
+
+
 .contact-info h5 {
 	color: #f9a041;
 }
