@@ -56,6 +56,14 @@
 						<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
 						<li><a class="smoothscroll"  href="#services" title="">Servicios</a></li>					
 						<li><a class="smoothscroll"  href="#contact" title="">Contacto</a></li>	
+						<li>
+							<div>
+								<a onclick="myFunctionEnglish()" class="smoothscroll" href="#intro" title="">Ingles</a>
+								<!-- <input type = "button" href="#intro" id="#myFunctionEnglish" onclick="myFunctionEnglish()" value = "Ingles"> -->
+								<input type = "button" href="#intro" id="#myFunctionEnglish"  onClick="window.location.reload();" value = "Español">
+
+							</div>
+						</li>
 					</ul>
 				</nav>    		
    		</div>  
@@ -72,13 +80,13 @@
    		<div class="row">
 
    			<div class="col-twelve">
-				<h5 id="lbltipAddedComment">Hola, mundo.</h5>
+				<h5 id="welcome">Hola, mundo.</h5>
 	   			<h1 class="animate__fadeInUp">Alberto Hernández</h1>
 	   			<p class="intro-position">
-	   				<span>Si lo puedes imaginar, lo puedes programar - Alejandro Taboada.</span>
+	   				<span id="slogan">Si lo puedes imaginar, lo puedes programar - Alejandro Taboada.</span>
 	   			</p>
 
-	   			<a class="button stroke smoothscroll " href="#about" title="">Acerca de mí</a>
+	   			<a class="button stroke smoothscroll " id="about_me" href="#about" title="">Acerca de mí</a>
 
 	   		</div>  
    			
@@ -98,14 +106,14 @@
 
    	<div class="row section-intro hideme">
    		<div class="col-twelve">
-   			<h5>Acerca de mí</h5>
-   			<h1>¡Conóceme!</h1>
+   			<h5 id="about_me_section">Acerca de mí</h5>
+   			<h1 id="meet_me" >¡Conóceme!</h1>
 
    			<div class="intro-info ">
 
    				<img src="images/foto_perfil.jpg" alt="Foto Perfil">
 
-   				<p class="lead">
+   				<p class="lead" id="about_me_info">
 					Con mas de 5 años como desarrollador, además de 3 años programando en el ámbito profesional, 
 					he adquirido un gran conocimiento de tecnologías para poder desarrollar distintos proyectos 
 					dependiendo de las necesidades del cliente, me enfoco en el desarrollo de aplicaciones 
@@ -121,28 +129,28 @@
 
    		<div class="col-six tab-full">
 
-   			<h3>Profile</h3>
-   			<p>
+   			<h3 id="profile">Perfil</h3>
+   			<p id="profile_section">
 				Mi experiencia laboral cumple con una gran variedad de ramas de la programación, desde el desarrollo de aplicaciónes de escritorio, web hasta aplicaciones móviles.
 
 			   </p>
 
    			<ul class="info-list">
    				<li>
-   					<strong>Nombre:</strong>
+   					<strong id="name">Nombre:</strong>
    					<span>Alberto Hernández Rodríguez</span>
    				</li>
    				<li>
-   					<strong>Fecha Nacimiento:</strong>
-   					<span>5 Diciembre 1994</span>
+   					<strong id="born_date">Fecha Nacimiento:</strong>
+   					<span id="born_date_info">5 Diciembre 1994</span>
    				</li>
    				<li>
-   					<strong>Trabajo Actual:</strong>
-   					<span>Ing. Sistemas en Transportadora Norte de Chihuahua</span>
+   					<strong id="work">Trabajo Actual:</strong>
+   					<span id="work_info">Ing. Sistemas en Transportadora Norte de Chihuahua</span>
    				</li>
    				<li>
-					<strong>Escolaridad:</strong>
-					<span>Ing. Sistemas Computacionales </span>
+					<strong id="scholarship">Escolaridad:</strong>
+					<span id="scholarship_info">Ing. Sistemas Computacionales </span>
 				</li>
    				<li>
    					<strong>Email:</strong>
@@ -155,8 +163,8 @@
 
    		<div class="col-six tab-full">
 
-   			<h3>Habilidades</h3>
-   			<p>
+   			<h3 id="ability">Habilidades</h3>
+   			<p id="ability_info">
 				Cuento con un amplio conocimiento básico en distintos lenguajes y tecnologías, 
 				lo cual me ha ayudado a realizar distintos proyectos en diferentes plataformas, 
 				jamás cerrándome a un lenguaje y explorando el basto mundo de los lenguajes y tecnologías de la programación.
@@ -212,20 +220,20 @@
    ================================================== -->
 	<section id="resume" class="grey-section">
 
-		<div class="row section-intro hideme">
+		<div class="row section-intro ">
    		<div class="col-twelve">
 
-   			<h5>Resumen laboral</h5>
-   			<h1>Conoce un poco más de mi experiencia</h1>
+   			<h5 id="Work_sumary">Resumen laboral</h5>
+   			<h1 id="Work_subtitle">Conoce un poco más de mi experiencia</h1>
 
    		</div>   		
    	</div> 
 
    	<div class="row resume-timeline">
 
-   		<div class="col-twelve resume-header">
+   		<div class="col-twelve resume-header hideme">
 
-   			<h2>Trabajo</h2>
+   			<h2 id="work_title">Trabajo</h2>
 
    		</div> 
 
@@ -241,12 +249,12 @@
 
 	   				<div class="timeline-header">
 	   					<h3>Front-end Developer</h3>
-	   					<p>Septiembre 2018 - Presente</p>
+	   					<p id="date_work1">Septiembre 2018 - Presente</p>
 	   				</div>
 
 	   				<div class="timeline-content">
 	   					<h4>Transportadora Norte De Chihuahua</h4>
-	   					<p>
+	   					<p id="date_info1">
 							Desarrollador de software, soporte técnico y a usuarios finales, en la empresa desarrollo junto a un equipo, 
 							un sistema de registro de movimientos, empleados y activos de la empresa, el cual incluye el control de entrada y 
 							salida de empleados, control de sus movimientos para su comisión por viaje, toma de fotos y escaneo de documentos, 
@@ -265,13 +273,13 @@
 	   				</div>
 
 	   				<div class="timeline-header">
-	   					<h3>Front-End Developer - Practicas</h3>
-	   					<p>Enero 2018 - Septiembre 2018</p>
+	   					<h3 id="work2">Front-End Developer - Practicas</h3>
+	   					<p id="date_work2">Enero 2018 - Septiembre 2018</p>
 	   				</div>
 
 	   				<div class="timeline-content">
 	   					<h4>Transportadora Norte De Chihuahua</h4>
-	   					<p>Desarrollador y técnico del departamento de TI en Transportadora Norte de Chihuahua; 
+	   					<p id="date_info2">Desarrollador y técnico del departamento de TI en Transportadora Norte de Chihuahua; 
 							   Desarrollo de página web para inventario del departamento y equipo de la empresa 
 							   desarrollado en ASP.NET, manejo y mantenimiento de servidor, cableado y estructuración de redes, 
 							   mantenimiento del equipo y soporte de usuarios.</p>
@@ -286,13 +294,13 @@
 	   				</div>
 
 	   				<div class="timeline-header">
-	   					<h3>Tecnico</h3>
-	   					<p>Enero 2017 - Diciembre 2017</p>
+	   					<h3 id="work3">Tecnico</h3>
+	   					<p id="date_work3">Enero 2017 - Diciembre 2017</p>
 	   				</div>
 
 	   				<div class="timeline-content">
-	   					<h4>Universidad Autonoma Ciudad Júarez</h4>
-	   					<p>Técnico de beca-trabajo en el área de mantenimiento de computo UACJ; 
+	   					<h4 id="work_name3">Universidad Autonoma Ciudad Júarez</h4>
+	   					<p id="work_info3">Técnico de beca-trabajo en el área de mantenimiento de computo UACJ; 
 							   reparación de computadoras, mantenimiento, instalación de software, soporte y atención a clientes.</p>
 	   				</div>
 
@@ -991,6 +999,12 @@
    ================================================== -->
 	<section id="contact">
 
+		<div class="row section-intro">
+			<div class="col-twelve">
+				<h5>Contacto</h5>
+				<!-- <h1>¿En qué te puedo ayudar?</h1> -->
+			</div>   		
+		</div> 
 
 		<div class="row contact-info">
 
@@ -1049,11 +1063,11 @@
    <footer>
      	<div class="row">
 
-      		<div class="col-six tab-full">
+      		<!-- <div class="col-six tab-full">
 				<div class="copyright">
 						<span>Diseño por <a href="mailto:alberto94hdrz@hotmail.com">Alberto Hernández</href=></span>	         	
 		         </div>		                  
-	      	</div>
+	      	</div> -->
 
 	      	<div id="go-top">
 				<a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>

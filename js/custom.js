@@ -89,12 +89,7 @@ $(document).ready(function() {
 
 
 
-		$(function() { // execute on document ready
-			$('#buttonSpanish').click( function() {   document.getElementById('lbltipAddedComment').innerHTML = 'your tip has been submitted!';
 
-			   
-			});
-		});
 
 $(function() {
     // vars for clients list carousel
