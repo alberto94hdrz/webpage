@@ -2051,7 +2051,7 @@ header .logo a {
 .popup-modal .link-box {
 	width: 100%;
 	overflow: hidden;
-	background: #000000;
+	background: #b66d19;
 }
 .popup-modal .link-box a {
 	font-family: "poppins-bold", sans-serif;
@@ -2064,7 +2064,7 @@ header .logo a {
 	display: block;
 	text-align: center;
 	float: left;
-	width: 50%;
+	width: 100%;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
