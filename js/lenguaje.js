@@ -34,9 +34,102 @@ var en_us = {
     work_date1: "January 2018 - September 2018",
 
     work3: "Technician",
-    work_name3: "Ciudad Júarez Autonomous University",
+    work_name3: "Universidad Autónoma Ciudad Juárez",
     work_aboutme3: "Grant-work technician in the UACJ computer maintenance area; computer repair, maintenance, software installation, support and customer service.",
-    work_date3: "January 2017 - December 2017"
+    work_date3: "January 2017 - December 2017",
+
+    work4: "Technician",
+    work_aboutme4: "Social Service at CAST UACJ; software installation, maintenance to computer equipment and printers, support and customer service.",
+    work_date4: "August 2016 - December 2016",
+
+    education_title: "Education",
+
+    education_title1: "University",
+    education_dates1: "2013 - 2018",
+    education_degree1: "Bachelor of Engineering in Computer Systems.",
+
+
+    education_title2: "High school",
+    education_dates2: "2010 - 2013",
+    education_degree2: "Specialty in the area of ​​Computer Science.",
+
+    education_title3: "Middle school",
+    education_dates3: "2017 - 2010",
+    education_degree3: "Computer Science.",
+
+    stat_proyecto: "Proyects",
+    stat_clients: "Clients",
+    stat_ideas: "Ideas",
+    stat_line_code: "Lines of code",
+    stat_hours: "Coding hours",
+
+    portfolio_title: "Portfolio",
+    portfolio_subtitle: "Some of my jobs",
+    portfolio_subt: "I adapt to the platform that suits you best.",
+
+    sales_point: "Sales Point",
+    mobile_app:"Mobile Application",
+    Web_System: "Web System",
+    Web_Page:"Web Page",
+    Access_Control:"Windows Application",
+
+    modal_info1: "A point of sale was developed for its 3 branches, which allows them to make inquiries about their sales,keep a sales record, print tickets, create users and control inventory, in addition that a section programmed exclusively for the client was included which takes control of their Home deliveries (Quantity, sale, delivery times, order orders, etc.).",
+    modal1: "Windows Application",
+    modal_close: "Close",
+
+    modal_info2: "Web system for the company, which has the control of employees, control of the movements of the drivers, control of departments such as accounting, human resources, workshop, etc. In addition to catalog and inventory of equipment inventory (computers, mobiles, tablets).",
+    modal2: "Web System",
+
+    modal_info3: "Personal project developed for smartphones with Android operating system, which your main function is the rating of local restaurants and food outlets, in order to know criticisms and recommendations that are close to the user thanks to their GPS location, In addition to being able to know the facilities of the premises (if they have parking, Wi-Fi, dining room, take away, etc.) and its menu.",
+    modal3: "Mobile Application",
+
+    modal_info4: "Web system which consists of inventory control, employees, as well as movements of the company's tractors.",
+    modal4: "Windows Aplication",
+
+    modal_info5: "Personal project which consists of an application to help users find properties for sale or rent near a point of interest, in addition to being able to filter them by number of rooms, bathrooms, etc. It allows communication between seller and user through a built-in chat and phone number storage.",
+    modal5: "Mobile Application",
+
+    modal_info6: "Point of sale for your branch which was developed with inventory control, point of sale, issuance of purchase ticket, sales report and movements, in addition to the possibility of being used in Tablets with Windows operating system or 2nd Monitor for taking orders by the cook.",
+    modal6: "Sales Point",
+
+    modal_info7: "Web page to know the company contact information.",
+    modal7: "Web Page",
+
+    modal_info8: "Web page to know the company contact information.",
+    modal8: "Web Page",
+
+    modal_info9: "Access control for registering employees' entries and exits.",
+    modal9: "Access control",
+
+    services_title: "Services",
+    services_subt: "How I can help?",
+    services_desc: "From creating a web page or an application, fixing some equipment or even designing a complex system, I adapt to your needs.",
+
+    service1: "Web Design",
+    service_desc1:"Creation of a website with only visual functionality to present information to a web system with specific functionalities for a client, as well as support for the host and acquisition of the domain according to the needs.",
+
+    service2: "Android Application",
+    service_desc2:"Development of an application for devices with Android operating system, using the sensors and components of the smartphone such as the speaker, microphone, movement sensors and camera to give a different experience and functionality to your application.",
+
+    service3: "Windows Application",
+    service_desc3:"Application developed for computers or tablets with Windows operating system, which is programmed to receive updates through the internet or connectivity to online databases.",
+
+    service4: "Windows Application",
+    service_desc4:"Correct, improve or update the graphical interface of web pages.",
+
+    service5: "Windows Application",
+    service_desc5:"Management, support and acquisition of hosting, in addition to supporting databases, making connections with applications or systems, corrections and maintenance of information.",
+
+    service6:"Doubts",
+    service_desc6:"Help, support and advice to create a website or host it on a host, system improvements or creation, as well as advice on the acquisition of equipment or technological services.",
+
+    service7:"Technical support",
+    service_desc7:"Corrective and preventive maintenance, as well as repairs or upgrades of computer equipment.",
+
+    contact_title: "CONTACT",
+    contact_location:"Ubication",
+    contact_email:"Send me an email",
+    contact_cellphone:"Cellphone: (52) 656-2739439"
 
 }
 
@@ -100,6 +193,108 @@ function myFunctionEnglish(){
     document.getElementById('date_work3').innerHTML = en_us.work_date3;  
     document.getElementById('work_name3').innerHTML = en_us.work_name3;  
     document.getElementById('work_info3').innerHTML = en_us.work_aboutme3;  
+
+    document.getElementById('work4').innerHTML = en_us.work4;  
+    document.getElementById('date_work4').innerHTML = en_us.work_date4;  
+    document.getElementById('work_info4').innerHTML = en_us.work_aboutme4; 
+
+    document.getElementById('education_title').innerHTML = en_us.education_title; 
+
+    document.getElementById('education_title1').innerHTML = en_us.education_title1; 
+    document.getElementById('education_dates1').innerHTML = en_us.education_dates1; 
+    document.getElementById('education_degree1').innerHTML = en_us.education_degree1; 
+
+    document.getElementById('education_title2').innerHTML = en_us.education_title2; 
+    document.getElementById('education_dates2').innerHTML = en_us.education_dates2; 
+    document.getElementById('education_degree2').innerHTML = en_us.education_degree2; 
+
+    document.getElementById('education_title3').innerHTML = en_us.education_title3; 
+    document.getElementById('education_dates3').innerHTML = en_us.education_dates3; 
+    document.getElementById('education_degree3').innerHTML = en_us.education_degree3; 
+    
+    document.getElementById('stat_proyects').innerHTML = en_us.stat_proyecto; 
+    document.getElementById('stat_clients').innerHTML = en_us.stat_clients; 
+    document.getElementById('stat_ideas').innerHTML = en_us.stat_ideas; 
+    document.getElementById('stat_coding').innerHTML = en_us.stat_line_code; 
+    document.getElementById('stat_hours').innerHTML = en_us.stat_hours;
+
+    document.getElementById('portfolio_title').innerHTML = en_us.portfolio_title; 
+    document.getElementById('portfolio_subtitle').innerHTML = en_us.portfolio_subtitle; 
+    document.getElementById('portfolio_desc').innerHTML = en_us.portfolio_subt; 
+    document.getElementById('sales_point').innerHTML = en_us.sales_point;
+    document.getElementById('sales_point1').innerHTML = en_us.sales_point;
+
+    document.getElementById('mobile_app').innerHTML = en_us.mobile_app;
+    document.getElementById('mobile_app1').innerHTML = en_us.mobile_app;
+    document.getElementById('Web_System').innerHTML = en_us.Web_System;
+    document.getElementById('Web_Page').innerHTML = en_us.Web_Page;    
+    document.getElementById('Web_Page1').innerHTML = en_us.Web_Page;
+    document.getElementById('Access_Control').innerHTML = en_us.Access_Control;
+
+    document.getElementById('modal_info1').innerHTML = en_us.modal_info1;    
+    document.getElementById('modal1').innerHTML = en_us.modal1;
+    document.getElementById('modal_close1').innerHTML = en_us.modal_close;
+
+    document.getElementById('modal_info2').innerHTML = en_us.modal_info2;    
+    document.getElementById('modal2').innerHTML = en_us.modal2;
+    document.getElementById('modal_close2').innerHTML = en_us.modal_close;
+
+    document.getElementById('modal_info3').innerHTML = en_us.modal_info3;    
+    document.getElementById('modal3').innerHTML = en_us.modal3;
+    document.getElementById('modal_close3').innerHTML = en_us.modal_close;
+
+    document.getElementById('modal_info4').innerHTML = en_us.modal_info4;    
+    document.getElementById('modal4').innerHTML = en_us.modal4;
+    document.getElementById('modal_close4').innerHTML = en_us.modal_close;
+
+    document.getElementById('modal_info5').innerHTML = en_us.modal_info5;    
+    document.getElementById('modal5').innerHTML = en_us.modal5;
+    document.getElementById('modal_close5').innerHTML = en_us.modal_close;
+
+    document.getElementById('modal_info6').innerHTML = en_us.modal_info6;    
+    document.getElementById('modal6').innerHTML = en_us.modal6;
+    document.getElementById('modal_close6').innerHTML = en_us.modal_close;
+
+    document.getElementById('modal_info7').innerHTML = en_us.modal_info7;    
+    document.getElementById('modal7').innerHTML = en_us.modal7;
+    document.getElementById('modal_close7').innerHTML = en_us.modal_close;
+
+    document.getElementById('modal_info8').innerHTML = en_us.modal_info8;    
+    document.getElementById('modal8').innerHTML = en_us.modal8;
+    document.getElementById('modal_close8').innerHTML = en_us.modal_close;
+
+    document.getElementById('modal_info9').innerHTML = en_us.modal_info9;    
+    document.getElementById('modal9').innerHTML = en_us.modal9;
+    document.getElementById('modal_close9').innerHTML = en_us.modal_close;
+
+    document.getElementById('services_title').innerHTML = en_us.services_title;    
+    document.getElementById('services_subt').innerHTML = en_us.services_subt;
+    document.getElementById('services_desc').innerHTML = en_us.services_desc;
+
+    document.getElementById('service1').innerHTML = en_us.service1;
+    document.getElementById('services_desc1').innerHTML = en_us.service_desc1;
+
+    document.getElementById('service2').innerHTML = en_us.service2;
+    document.getElementById('services_desc2').innerHTML = en_us.service_desc2;
+
+    document.getElementById('service3').innerHTML = en_us.service3;
+    document.getElementById('services_desc3').innerHTML = en_us.service_desc3;
+
+    document.getElementById('services_desc4').innerHTML = en_us.service_desc4;
+
+    document.getElementById('services_desc5').innerHTML = en_us.service_desc5;
+
+    document.getElementById('service6').innerHTML = en_us.service6;
+    document.getElementById('services_desc6').innerHTML = en_us.service_desc6;
+
+    document.getElementById('service7').innerHTML = en_us.service7;
+    document.getElementById('services_desc7').innerHTML = en_us.service_desc7;
+
+    document.getElementById('contact_title').innerHTML = en_us.contact_title;
+    document.getElementById('contact_location').innerHTML = en_us.contact_location;
+    document.getElementById('contact_email').innerHTML = en_us.contact_email;
+    document.getElementById('contact_cellphone').innerHTML = en_us.contact_cellphone;
+
 
 }
 
