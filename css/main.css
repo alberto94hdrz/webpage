@@ -153,6 +153,12 @@ html {
 		width: 20px;
 		height: 20px;
 	}
+
+	.cta-thumb img {
+		height: 2rem;
+		width: 2rem;
+		border-radius: 50%;
+	}
 }
 @media only screen and (max-width:400px) {
 	html {
@@ -163,6 +169,12 @@ html {
 	{
 		width: 5px;
 		height: 5px;
+	}
+
+	.cta-thumb img {
+		height: 2rem;
+		width: 2rem;
+		border-radius: 50%;
 	}
 
 }
@@ -1132,7 +1144,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	margin-bottom: 3.6rem;
+	margin-bottom: 2.0rem;
 	position: relative;
 }
 .section-intro h1 {
@@ -1609,7 +1621,7 @@ header .logo a {
  */
 #about {
 	background: #FFFFFF;
-	padding-top: 12rem;
+	padding-top: 8rem;
 	padding-bottom: 15rem;
 }
 #about .section-intro {
@@ -1739,7 +1751,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #resume {
-	padding-top: 12rem;
+	padding-top: 8rem;
 	padding-bottom: 12rem;
 }
 
@@ -1909,7 +1921,7 @@ header .logo a {
  */
 #portfolio {
 	background: #FFFFFF;
-	padding-top: 12rem;
+	padding-top: 8rem;
 	padding-bottom: 12rem;
 }
 #portfolio .folio-item {
@@ -2146,8 +2158,8 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #cta {
-	padding-top: 10.2rem;
-	padding-bottom: 9rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 	text-align: center;
 }
 #cta p.lead {
@@ -2725,3 +2737,13 @@ footer .copyright span:last-child::after {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+
+
+
+
+
+.div-largo
+{
+	width: 100%;
+}

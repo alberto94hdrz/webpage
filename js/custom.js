@@ -49,48 +49,6 @@ $(document).ready(function() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 $(function() {
     // vars for clients list carousel
     // http://stackoverflow.com/questions/6759494/jquery-function-definition-in-a-carousel-script
@@ -126,3 +84,13 @@ $(function() {
       }
     }
   });
+
+
+
+
+  // ********************************************ESCONDER DIV
+
+  $("nav#main-nav-wrap > ul > li").on("click", function () {
+    $("nav#main-nav-wrap").hide()
+});
+  // ********************************************ESCONDER DIV

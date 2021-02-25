@@ -28,12 +28,26 @@
    <script src="https://kit.fontawesome.com/360e0f40b5.js" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
+
    <!-- script
    ================================================== -->   
 	<script src="js/modernizr.js"></script>
 	<script src="js/pace.min.js"></script>
 	<script src="js/lenguaje.js" ></script>
 	<script src="js/custom.js"></script>
+	<script src="js/styling.js"></script>
+
+	<script type="text/javascript"> 
+    //    $(document).ready(function() {
+	// 	$("#dvid").hide(); //hide your div initially
+	// 	var topOfOthDiv = $("#othdiv").offset().top;
+	// 	$(window).scroll(function() {
+	// 		if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
+	// 			$("#dvid").show(200); //reached the desired point -- show div
+	// 		}
+	// 	});
+	// });
+    </script> 
 
 </head>
 
@@ -41,31 +55,32 @@
 
 	<!-- header================================================== -->
    
-   <header> 
+   <header > 
 
-   	<div class="row" >
+   	<div id="navbar_top" class="row" >
 
-   		<div class="top-bar" >
+   		<div  class="top-bar container"  >
    			<a class="menu-toggle" href="#"><span>Menu</span></a>
+		
+
 
 		   	<nav id="main-nav-wrap">
-					<ul class="main-navigation">
-						<li class="current"><a class="smoothscroll"  href="#intro" title="">Inicio</a></li>
-						<li><a class="smoothscroll"  href="#about" title="">Acerca</a></li>
-						<li><a class="smoothscroll"  href="#resume" title="">Resumen</a></li>
-						<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
-						<li><a class="smoothscroll"  href="#services" title="">Servicios</a></li>					
-						<li><a class="smoothscroll"  href="#contact" title="">Contacto</a></li>	
-						<li>
-							<div>
-								<a onclick="myFunctionEnglish()" class="smoothscroll" href="#intro" title="">Ingles</a>
-								<!-- <input type = "button" href="#intro" id="#myFunctionEnglish" onclick="myFunctionEnglish()" value = "Ingles"> -->
-								<input type = "button" href="#intro" id="#myFunctionEnglish"  onClick="window.location.reload();" value = "Español">
+				<ul class="main-navigation">
+					<li class="current"><a class="smoothscroll"  href="#intro" title="">Inicio</a></li>
+					<li><a class="smoothscroll"  href="#about" title="">Acerca</a></li>
+					<li><a class="smoothscroll"  href="#resume" title="">Resumen</a></li>
+					<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
+					<li><a class="smoothscroll"  href="#services" title="">Servicios</a></li>					
+					<li><a class="smoothscroll"  href="#contact" title="">Contacto</a></li>	
+					<li>
+						<div>
+							<a onclick="myFunctionEnglish()" class="smoothscroll" href="#intro" title="">Ingles</a>
+							<input type = "button" href="#intro" id="#myFunctionEnglish"  onClick="window.location.reload();" value = "Español">
 
-							</div>
-						</li>
-					</ul>
-				</nav>    		
+						</div>
+					</li>
+				</ul>
+			</nav>    		
    		</div>  
    		
    	</div> 		
@@ -74,7 +89,7 @@
 	<!-- intro section================================================== -->
    <section id="intro">   
 
-   	<div class="intro-overlay"></div>	
+   	<div  class="intro-overlay"></div>	
 
    	<div class="intro-content rounded_button">
    		<div class="row">
@@ -99,7 +114,6 @@
       </ul>    	
 
    </section> 
-
 
    <!-- about section ================================================== -->
    <section id="about">  
@@ -500,29 +514,24 @@
 		</div> 
 	</div> 
 
-</section> 
-
-
-
-
-
+	</section> 
 
 	<!-- Portfolio Section
    ================================================== -->
 	<section id="portfolio">
 
 		<div class="row section-intro">
-   		<div class="col-twelve">
+   			<div class="col-twelve">
 
-   			<h5 id="portfolio_title">Portafolio</h5>
-   			<h1 id="portfolio_subtitle">Algunos de mis trabajos</h1>
+				<h5 id="portfolio_title">Portafolio</h5>
+				<h1 id="portfolio_subtitle">Algunos de mis trabajos</h1>
 
-   			<p class="lead" id="portfolio_desc">
-				Me adapto a la plataforma que más te convenga.
-			   </p>
+				<p class="lead" id="portfolio_desc">
+					Me adapto a la plataforma que más te convenga.
+				</p>
 
-   		</div>   		
-   	</div>  
+			</div>   		
+		</div>  
 
    	<div class="row portfolio-content">
 
@@ -530,7 +539,7 @@
 
 	         <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
 
-	         	<div class="bgrid folio-item">
+	         	<div class="bgrid folio-item hideme">
 	               <div class="item-wrap">
 	               	<img src="images/portfolio/punto_tortas.png" alt="Punto">
 	                  	<a href="#modal-01" class="overlay">	                  	           
@@ -546,7 +555,7 @@
 	               </div>	               
 	        	</div> 
 
-				<div class="bgrid folio-item">
+				<div class="bgrid folio-item hideme">
 					<div class="item-wrap">
 						<img src="images/portfolio/cel_delichus.png"alt="Delichus">
 						<a href="#modal-03" class="overlay">             		                  
@@ -582,7 +591,7 @@
 
 
 
-	            <div class="bgrid folio-item">
+	            <div class="bgrid folio-item hideme">
 	               <div class="item-wrap">
 	               	<img src="images/portfolio/web_tnch.png" alt="TNCH2">
 	                  <a href="#modal-04" class="overlay">                  	                 
@@ -598,7 +607,7 @@
 	               </div>
 	        	</div> 
 
-	        	<div class="bgrid folio-item">
+	        	<div class="bgrid folio-item hideme">
 	               <div class="item-wrap">
 	               	<img src="images/portfolio/movil_realstate.png" alt="Lighthouse">
 	                  <a href="#modal-05" class="overlay">             		                  
@@ -614,7 +623,7 @@
 	               </div>
 	        	</div> 
 
-	            <div class="bgrid folio-item">
+	            <div class="bgrid folio-item hideme">
 	               <div class="item-wrap">
 	               	<img src="images/portfolio/tablet_rinconcito.png" alt="Rinconcito">
 	                  <a href="#modal-06" class="overlay">
@@ -630,7 +639,7 @@
 	               </div>
 	        	</div>  
 
-				<div class="bgrid folio-item">
+				<div class="bgrid folio-item hideme">
 					<div class="item-wrap">
 						<img src="images/portfolio/web_distmart.png" alt="Rinconcito">
 						<a href="#modal-07" class="overlay">
@@ -646,7 +655,7 @@
 					</div>
 				</div>  
 
-				<div class="bgrid folio-item">
+				<div class="bgrid folio-item hideme">
 					<div class="item-wrap">
 						<img src="images/portfolio/web_tortas.png" alt="Rinconcito">
 						<a href="#modal-08" class="overlay">
@@ -662,7 +671,7 @@
 					</div>
 				</div>
 
-				<div class="bgrid folio-item">
+				<div class="bgrid folio-item hideme">
 					<div class="item-wrap">
 						<img src="images/portfolio/pc_tnch.png" alt="Rinconcito">
 						<a href="#modal-09" class="overlay">
