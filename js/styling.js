@@ -45,7 +45,7 @@ $(document).mouseup(function (e) {
      }
     else
      {
-      $('.a').show(600);
+            $('.a').show(600);     
      }
  });
 

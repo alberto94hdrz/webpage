@@ -236,6 +236,7 @@ html {
 	{
 		display: none;
 		visibility: hidden;	
+		height: 0px;
 	}
 
 }
