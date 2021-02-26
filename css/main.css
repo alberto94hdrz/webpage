@@ -126,6 +126,51 @@
  *
  * ------------------------------------------------------------------- 
  */
+
+ #nav_hide {
+	display: flex;
+
+	justify-content: space-evenly;
+	height: 50px;
+ }
+
+
+
+ #nav_hide .smoothscroll{
+	color:white;
+ }
+
+/* Add a black background color to the top navigation */
+.topnav {
+background-color: #333;
+overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+float: left;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 14px;
+font-family: "lora-regular", serif;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+background-color: rgb(190, 110, 19);
+color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+background-color: #000000;
+color: white;
+}
+
+
 html {
 	font-size: 10px;
 }
@@ -175,6 +220,22 @@ html {
 		height: 2rem;
 		width: 2rem;
 		border-radius: 50%;
+	}
+
+
+	.topnav {
+		display: none;
+		visibility: hidden;
+	}
+
+	#navbar_top{
+		visibility:visible;
+	}
+
+	#nav_hide
+	{
+		display: none;
+		visibility: hidden;	
 	}
 
 }
