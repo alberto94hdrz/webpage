@@ -152,7 +152,28 @@ function myFunctionSpanish(){
 
 }
 
+var count = 1;
+
+
 function myFunctionEnglish(){
+
+    // background-color:rgb(255, 255, 255); 
+    // transition-duration: 0.6s;   
+    // color: black;
+
+        var property = document.getElementById('english_button');
+        if (count == 0) {
+            property.style.backgroundColor = "#9F9F9F"
+            property.style.color = "#5FBF48"
+            count = 1;        
+        }
+        else {
+            property.style.backgroundColor = "#FFFFFF"
+            property.style.color = "#000000"
+   
+            // count = 0;
+        }
+    
 
     document.getElementById('welcome').innerHTML = en_us.welcome;  
     document.getElementById('slogan').innerHTML = en_us.slogan;  
@@ -303,12 +324,9 @@ function myFunctionEnglish(){
 $(function() { // execute on document ready
     $('#buttonSpanish').click( function() {   
     
-        document.getElementById('lbltipAddedComment').innerHTML = welcome;   
-
-       
+        document.getElementById('lbltipAddedComment').innerHTML = welcome;          
     });
 });
-
 
 
 
