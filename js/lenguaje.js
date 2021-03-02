@@ -8,11 +8,14 @@ var en_us = {
     slogan: "IF YOU CAN IMAGINE IT, YOU CAN PROGRAM IT - ALEJANDRO TABOADA.",
     about_me_button: "About me",
     conoceme : "Meet me!",
-    about_me : "With more than 5 years as a developer, in addition to 3 years programming in the professional field,I have acquired a great knowledge of technologies to be able to develop different projectsdepending on the client's needs, I focus on application developmentweb focused on business administration, in addition to mobile application developmentand desktop using different IDEs.",
+    about_me : "With more than 5 years as a developer, in addition to 3 years programming in the professional field, I have acquired a great knowledge of technologies to be able to develop different projects depending on the client's needs, I focus on application development, web and business administration, also in mobile application development and desktop using different IDEs.",
     profile: "Profile",
-    profile_info : "My work experience fulfills a wide variety of branches of programming, from desktop application development, web applications to mobile applications.",
+    profile_info : "My work experience fulfills a wide variety of branches of programming, from desktop, web applications to mobile applications.",
     ability: "Abilities",
     ability_info : "I have extensive basic knowledge in different languages ​​and technologies, which has helped me to carry out different projects on different platforms, never closing myself to one language and exploring the vast world of programming languages ​​and technologies.",
+    
+    download_botton : "DOWNLOAD SUMMARY",
+
     name: "Name",
     born_date: "Birth date",
     born_date_info: "December 5, 1994",
@@ -25,7 +28,7 @@ var en_us = {
     work_subtitle: "Know a little more about my experience",
 
     work: "Work",
-    work_aboutme: "Software developer, technical support and end users, in the company I develop together with a team, a registration system of movements, employees and assets of the company, which includes the control of entry and exit of employees, control of their movements to your commission for travel, taking photos and scanning documents, all this through a web page developed in ASP.NET in addition to various technologies, such as JAVA for access control through fingerprint.",
+    work_aboutme: "Software developer, technical support and end users support, in the company I develop together with a team, a registration system of movements, employees and assets of the company, which includes the control of entry and exit of employees, control of their movements, commissions for travel, taking photos and scanning documents, all this through a web page developed in ASP.NET in addition to various technologies, such as JAVA for access control through fingerprint.",
     work_date: "September 2018 - Present",
     
     work1: "Front-End Developer - Internship",
@@ -35,7 +38,7 @@ var en_us = {
 
     work3: "Technician",
     work_name3: "Universidad Autónoma Ciudad Juárez",
-    work_aboutme3: "Grant-work technician in the UACJ computer maintenance area; computer repair, maintenance, software installation, support and customer service.",
+    work_aboutme3: "Technician in the UACJ computer maintenance area; computer repair, maintenance, software installation, support and customer service.",
     work_date3: "January 2017 - December 2017",
 
     work4: "Technician",
@@ -65,7 +68,7 @@ var en_us = {
 
     portfolio_title: "Portfolio",
     portfolio_subtitle: "Some of my jobs",
-    portfolio_subt: "I adapt to the platform that suits you best.",
+    portfolio_subt: "I adapt to the platform that suits you best. ",
 
     sales_point: "Sales Point",
     mobile_app:"Mobile Application",
@@ -73,14 +76,14 @@ var en_us = {
     Web_Page:"Web Page",
     Access_Control:"Windows Application",
 
-    modal_info1: "A point of sale was developed for its 3 branches, which allows them to make inquiries about their sales,keep a sales record, print tickets, create users and control inventory, in addition that a section programmed exclusively for the client was included which takes control of their Home deliveries (Quantity, sale, delivery times, order orders, etc.).",
+    modal_info1: "A point of sale was developed for its 3 branches, which allows them to make inquiries about their sales,keep a sales record, print tickets, create users and control inventory, in addition i developed a section exclusively for the client that included control of their Home deliveries (Quantity, sale, delivery times, order, etc.).",
     modal1: "Windows Application",
     modal_close: "Close",
 
     modal_info2: "Web system for the company, which has the control of employees, control of the movements of the drivers, control of departments such as accounting, human resources, workshop, etc. In addition to catalog and inventory of equipment inventory (computers, mobiles, tablets).",
     modal2: "Web System",
 
-    modal_info3: "Personal project developed for smartphones with Android operating system, which your main function is the rating of local restaurants and food outlets, in order to know criticisms and recommendations that are close to the user thanks to their GPS location, In addition to being able to know the facilities of the premises (if they have parking, Wi-Fi, dining room, take away, etc.) and its menu.",
+    modal_info3: "Personal project developed for smartphones with Android operating system, which the main function is the rating of local restaurants and food outlets, in order to know criticisms and recommendations that are close to the user thanks to their GPS location, In addition to being able to know the facilities of the premises (if they have parking, Wi-Fi, dining room, take away, etc.) and its menu.",
     modal3: "Mobile Application",
 
     modal_info4: "Web system which consists of inventory control, employees, as well as movements of the company's tractors.",
@@ -89,7 +92,7 @@ var en_us = {
     modal_info5: "Personal project which consists of an application to help users find properties for sale or rent near a point of interest, in addition to being able to filter them by number of rooms, bathrooms, etc. It allows communication between seller and user through a built-in chat and phone number storage.",
     modal5: "Mobile Application",
 
-    modal_info6: "Point of sale for your branch which was developed with inventory control, point of sale, issuance of purchase ticket, sales report and movements, in addition to the possibility of being used in Tablets with Windows operating system or 2nd Monitor for taking orders by the cook.",
+    modal_info6: "Point of sale developed with inventory control, point of sale, issuance of purchase ticket, sales report and movements, in addition to the possibility of being used in Tablets with Windows operating system or 2nd Monitor for taking orders by the chef.",
     modal6: "Sales Point",
 
     modal_info7: "Web page to know the company contact information.",
@@ -106,7 +109,7 @@ var en_us = {
     services_desc: "From creating a web page or an application, fixing some equipment or even designing a complex system, I adapt to your needs.",
 
     service1: "Web Design",
-    service_desc1:"Creation of a website with only visual functionality to present information to a web system with specific functionalities for a client, as well as support for the host and acquisition of the domain according to the needs.",
+    service_desc1:"Creation of a website with only visual functionality to present information, to a web system with specific functionalities for a client, as well as support for the host and acquisition of the domain according to the needs.",
 
     service2: "Android Application",
     service_desc2:"Development of an application for devices with Android operating system, using the sensors and components of the smartphone such as the speaker, microphone, movement sensors and camera to give a different experience and functionality to your application.",
@@ -191,6 +194,8 @@ function myFunctionEnglish(){
 
     document.getElementById('ability').innerHTML = en_us.ability;  
     document.getElementById('ability_info').innerHTML = en_us.ability_info;  
+
+    document.getElementById('download_botton').innerHTML = en_us.download_botton;  
 
     document.getElementById('name').innerHTML = en_us.name;  
     document.getElementById('born_date').innerHTML = en_us.born_date;  
